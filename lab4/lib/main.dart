@@ -34,7 +34,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _heartCounter = 0;
 
-  void _HeartCounter() {
+  void _heartCounter() {
     setState(() {
       _heartCounter++;
     });
@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     Row(
                       children: [
-                        IconButton(onPressed: _HeartCounter, icon: Icon(Icons.favorite, color: Colors.red,)),
+                        IconButton(onPressed: _heartCounter, icon: Icon(Icons.favorite, color: Colors.red,)),
                         Text("$_heartCounter", style: TextStyle(fontSize: 16),)
                       ],
                     )
